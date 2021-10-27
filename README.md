@@ -6,7 +6,7 @@ To get your project featured, refer to the issue pinned at the top of the issue 
 
 ## Contributions
 
-To contribute in this repository, first clone the repository in your local machine. Make a folder by the name of your project in the project folder and add the contents as told in the issue template. After adding all of the required contents, make a pull request.
+To contribute in this repository, first clone the repository in your local machine. Make a folder by the name of your project in the *Projects* folder and add the contents as told in the issue template. After adding all of the required contents, make a pull request.
 
 ## Cloning
 
