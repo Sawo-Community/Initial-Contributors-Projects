@@ -15,5 +15,5 @@ You can also fork the repository in your account and add your project manually. 
 Run the following code in your terminal to clone the repository.
 
 ```sh
-git clone https://github.com/Sawo-Community/Sawo-Docs.git
+git clone https://github.com/Sawo-Community/Community-Projects.git
 ```
