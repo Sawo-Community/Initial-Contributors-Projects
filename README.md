@@ -1,4 +1,4 @@
-# Community-Projects
+# Initial-Contributors-Projects
 
 This repository contains all of the projects created by our valued community members. 
 
