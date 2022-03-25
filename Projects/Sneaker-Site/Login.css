@@ -1,0 +1,14 @@
+*{
+    background-color: royalblue;
+}
+
+.login{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
