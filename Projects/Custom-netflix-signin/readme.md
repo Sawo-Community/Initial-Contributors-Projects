@@ -1,7 +1,14 @@
 ## Custom Netflix Sign In
 
+# Form Customisation
 
-##How to Integrate SAWO SDK to Flask App
+Add Custom Fields:  
+1.) Click on the design page in the navbar and select your project using the dropdown
+2.) From here changing your forms looks is just a matter of clicks and you can see the changes live with your form is shown on the right side.
+
+Here you can see the customised form I made for Netflix sign in
+
+## How to Integrate SAWO SDK to Flask App
 
 Requirements – Python, pip.
 
