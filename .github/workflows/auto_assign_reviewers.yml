@@ -1,12 +1,13 @@
-name: "Auto Assign"
+name: Review Assign
+
 on:
-  - pull_request
+  pull_request:
+    types: [opened, ready_for_review]
 
 jobs:
-  assign_reviewer:
+  assign:
     runs-on: ubuntu-latest
     steps:
-      - uses: shufo/auto-assign-reviewer-by-files@v1.1.3
+      - uses: hkusu/review-assign-action@v1
         with:
-          config: ".github/assign-by-files.yml"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          reviewers: "kaiwalyakoparkar", "Sonichigo"
