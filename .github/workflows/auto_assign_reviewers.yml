@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: hkusu/review-assign-action@v1
         with:
-          reviewers: "kaiwalyakoparkar", "Sonichigo"
+          reviewers: kaiwalyakoparkar, Sonichigo
