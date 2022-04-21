@@ -1,0 +1,120 @@
+.navbar {
+  transition: all 0.4s;
+  z-index: 2;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+a{
+  color: #DC1A28;
+  text-decoration: none;
+}
+
+a:hover{
+  color:white;
+  text-decoration: none;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+      background: #1a1a1a;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: #555;
+  }
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+
+body {
+  min-height: 110vh;
+  background-color: #000000;
+  background-image: linear-gradient(135deg, black 0%, #000000 100%);
+}
+
+
+
+.unt{
+  position: relative;
+  top: 50%;
+}
+.hero {
+  min-height: 80vh;
+  top: 0%;
+  min-width: 100vw;
+  z-index: -1;
+  background-color: #000000;
+  background-image: -webkit-linear-gradient(top, 
+  rgba(0,0,0,0.9) 1%, 
+  rgba(0,0,0,0) 70%,
+  rgba(0,0,0,0) 80%,
+  rgba(0,0,0,0.9) 100%
+),
+-webkit-linear-gradient(bottom, 
+  rgba(0,0,0,0.9) 1%, 
+  rgba(0,0,0,0) 70%,
+  rgba(0,0,0,0) 80%,
+  rgba(0,0,0,0.9) 100%
+),
+-webkit-linear-gradient(left, 
+  rgba(0,0,0,0.9) 0%, 
+  rgba(0,0,0,0) 40%,
+  rgba(0,0,0,0) 80%,
+  rgba(0,0,0,0.9) 100%
+),url(https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/2341e349-a6fc-4b04-a0ad-9b21defa1f88/IN-en-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+
+@media only screen and (min-width: 768px) {
+  .unt{
+      font-size: 2rem;
+  }
+}
