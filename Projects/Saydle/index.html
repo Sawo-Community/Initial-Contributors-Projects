@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <script src="modal.js" defer type="module"></script>
+    <script src="api.js" defer type="module"></script>
+    <script src="script.js" defer type="module"></script>
+    <title>Saydle</title>
+  </head>
+  <body>
+    <header>
+      <div class="how-to">
+        <button>How To Play?</button>
+      </div>
+      <div class="github-repo">
+        <a href="https://github.com/Rishabh510/Saydle/">Github Repo</a>
+      </div>
+      <div class="title">Saydle</div>
+      <hr />
+    </header>
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="instructions">
+          <p>Guess the <strong>SAYDLE</strong> in six tries.</p>
+          <p>
+            Each guess must be a valid five-letter word. Click the <strong>Record</strong> button
+            to record audio and say the word out loud.
+          </p>
+          <p>
+            In case of homophones, try saying a sentence with target word being
+            the first word.
+          </p>
+          <p>
+            After each guess, the color of the tiles will change to show how
+            close your guess was to the word.
+          </p>
+          <div class="examples">
+            <p><strong>Examples</strong></p>
+            <div class="example">
+              <div class="example-grid">
+                <div class="tile" data-state="correct">W</div>
+                <div class="tile" data-state="active">E</div>
+                <div class="tile" data-state="active">A</div>
+                <div class="tile" data-state="active">R</div>
+                <div class="tile" data-state="active">Y</div>
+              </div>
+              <p>
+                The letter <strong>W</strong> is in the word and in the correct
+                spot.
+              </p>
+            </div>
+            <div class="example">
+              <div class="example-grid">
+                <div class="tile" data-state="active">P</div>
+                <div class="tile" data-state="wrong-location">I</div>
+                <div class="tile" data-state="active">L</div>
+                <div class="tile" data-state="active">L</div>
+                <div class="tile" data-state="active">S</div>
+              </div>
+              <p>
+                The letter <strong>I</strong> is in the word but in the wrong
+                spot.
+              </p>
+            </div>
+            <div class="example">
+              <div class="example-grid">
+                <div class="tile" data-state="active">V</div>
+                <div class="tile" data-state="active">A</div>
+                <div class="tile" data-state="active">G</div>
+                <div class="tile" data-state="wrong">U</div>
+                <div class="tile" data-state="active">E</div>
+              </div>
+              <p>
+                The letter <strong>U</strong> is not in the word in any spot.
+              </p>
+            </div>
+          </div>
+          <p>
+            <strong
+              >A new SAYDLE will be available each day!<strong></strong
+            ></strong>
+          </p>
+          <strong><strong> </strong></strong>
+        </div>
+      </div>
+    </div>
+    <div class="alert-container" data-alert-container></div>
+    <div class="stats">Loading stats...</div>
+    <div data-guess-grid class="guess-grid">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+    <div class="captions-container">
+      <button class="record">
+        <svg
+          width="40px"
+          height="40px"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 18v-1.06A8 8 0 0 1 2 9h2a6 6 0 1 0 12 0h2a8 8 0 0 1-7 7.94V18h3v2H6v-2h3zM6 4a4 4 0 1 1 8 0v5a4 4 0 1 1-8 0V4z"
+          />
+        </svg>
+        <h3>Record</h3>
+      </button>
+      <span class="captions"></span>
+    </div>
+  </body>
+</html>

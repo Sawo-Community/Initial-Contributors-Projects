@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saydle</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <h1>Login to Saydle</h1>
+        <div id="sawo-container" style="height: 400px; width: 300px"></div>
+      </div>
+    </div>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+      var config = {
+        containerID: "sawo-container",
+        identifierType: "both_email_phone", //'email' or 'phone_number_sms' or 'both_email_phone'
+        apiKey: "99a6bf23-41d6-4bd5-895a-0e1e65570357",
+        onSuccess: (payload) => {
+          console.log(payload);
+          sessionStorage.setItem("user", JSON.stringify(payload));
+          window.location = "./index.html";
+        },
+      };
+      var sawo = new Sawo(config);
+      sawo.showForm();
+    </script>
+  </body>
+</html>

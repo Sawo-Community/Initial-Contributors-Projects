@@ -1,0 +1,106 @@
+.how-to {
+    float: left;
+}
+
+.github-repo {
+    float: right;
+}
+
+.example-grid {
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    flex-grow: 1;
+    grid-template-columns: repeat(5, 4em);
+    grid-template-rows: repeat(1, 4em);
+    gap: 0.25em;
+    margin-bottom: 1em;
+}
+
+.tile {
+    font-size: 2em;
+    color: white;
+    border: 0.05em solid hsl(240, 2%, 23%);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: transform 250ms linear;
+}
+
+.instructions {
+    font-size: 14px;
+    color: white;
+}
+
+.examples {
+    border-bottom: 1px solid var(--color-tone-4);
+    border-top: 1px solid var(--color-tone-4);
+}
+
+.example {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* .tile {
+    width: 40px;
+    height: 40px;
+} */
+
+:host([page]) section {
+    padding: 16px;
+    padding-top: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #121213;
+    margin: 8% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 40%;
+    border-radius: 0.5em;
+    color: white;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
