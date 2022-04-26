@@ -9,7 +9,7 @@ Implement SAWO authentication with zero installation to local computer on any te
 ### Contribution Guidelines
 
 1. Fork the project
-![forking the project](https://i.imgur.com/qbVouuV.png)
+![forking the project](https://user-images.githubusercontent.com/53075480/165340338-6600332e-ff42-4d61-91b4-88c1e4b89fae.png)
 
 2. Once you are in your fork the url should look something like
 `https://github.com/<YOUR-USERNAME>/Initial-Contributors-Projects/`
