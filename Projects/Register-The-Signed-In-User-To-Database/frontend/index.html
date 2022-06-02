@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        const handleSubmit = async (e) => {
+            let email = document.getElementById('email').value
+            console.log(email);
+
+            const response = await fetch("http://localhost:5000/api/auth/signup", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email })
+            });
+            const json = await response.json();
+            console.log(json);
+
+            alert(json.msg);
+
+            if(json.success) {
+                document.getElementById('success').style.visibility = 'visible';
+                document.getElementById('success').innerHTML = 'Thank you for signing up!';
+            }
+            
+        }
+    </script>
+
+    <div align="center" class="container">
+        <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Email ID">
+        </div>
+        <div class="btn btn-success" onclick="handleSubmit()">Submit</div>
+        <div id="success"></div>
+    </div>
+</body>
+
+</html>
