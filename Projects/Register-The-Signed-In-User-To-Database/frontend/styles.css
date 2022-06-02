@@ -1,0 +1,18 @@
+body{
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-travel-composition-with-world-map-wooden-background_169016-16173.jpg?w=2000');
+}
+.container {
+  
+    width: 50%;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+#success {
+    visibility: hidden;
+    margin: 20px;
+    font-size: 30px;
+    background-color: white;
+    color: green;
+    padding: 30px;
+}
